@@ -45,7 +45,7 @@ update_hostname() {
     sed -i "s/${old_hostname}/${HOSTNAME}/g" /etc/hosts
     hostname "${HOSTNAME}"
     echo ""
-    echo "Hostname will be changed on next reboot: ${HOSTNAME}"
+    echo "O nome do host será alterado na próxima reinicialização: ${HOSTNAME}"
     echo ""
   fi
 }
@@ -55,13 +55,13 @@ update_hostname() {
 # ------------------------------------------------------------------------------
 install_requirements() {
   echo ""
-  echo "Updating APT packages list..."
+  echo "Atualizando APT packages list..."
   echo ""
   apt-get --allow-releaseinfo-change update
   apt-get install software-properties-common
   apt-get update
   echo ""
-  echo "Ensure all requirements are installed..."
+  echo "Certifique-se de que todos os requisitos estejam instalados..."
   echo ""
   apt-get install -y "${REQUIREMENTS[@]}"
 }
@@ -71,7 +71,7 @@ install_requirements() {
 # ------------------------------------------------------------------------------
 install_docker() {
   echo ""
-  echo "Installing Docker..."
+  echo "A instalar Docker..."
   echo ""
   curl -fsSL https://get.docker.com | sh
 }
@@ -142,7 +142,7 @@ main() {
   echo "http://${HOSTNAME}.local:8123/ no teu browser"
   echo "para carregar o home assistant."
   echo "Se o link acima não funcionar, tenta o seguinte link http://${ip_addr}:8123/"
-  echo "Aprecia o home assistant :)"
+  echo "Aproveita o teu home assistant :)"
 
   exit 0
 }
