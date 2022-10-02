@@ -81,7 +81,7 @@ install_docker() {
 # ------------------------------------------------------------------------------
 install_hassio() {
   echo ""
-  echo "Installing Home Assistant..."
+  echo "A instalar o Home Assistant..."
   echo ""
   apt-get update
   apt-get install udisks2 wget -y
@@ -137,11 +137,12 @@ main() {
   # Friendly closing message
   ip_addr=$(hostname -I | cut -d ' ' -f1)
   echo "======================================================================="
-  echo "Hass.io is now installing Home Assistant."
-  echo "This process may take up to 20 minutes. Please visit:"
-  echo "http://${HOSTNAME}.local:8123/ in your browser and wait"
-  echo "for Home Assistant to load."
-  echo "If the previous URL does not work, please try http://${ip_addr}:8123/"
+  echo "Hass.io está agora a instalar o Home Assistant."
+  echo "Este processo demora a volta de  20 minutes. Abre o seguinte link:"
+  echo "http://${HOSTNAME}.local:8123/ no teu browser"
+  echo "para carregar o home assistant."
+  echo "Se o link acima não funcionar, tenta o seguinte link http://${ip_addr}:8123/"
+  echo "Aprecia o home assistant :)"
 
   exit 0
 }
