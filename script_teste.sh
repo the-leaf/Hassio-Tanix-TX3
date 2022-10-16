@@ -5,6 +5,13 @@
 ##                                                                   ##
 #######################################################################
 #######################################################################
+install_requirements() {
+  echo ""
+  echo "Instalar Armbian Software..."
+  echo ""
+  armbian-software
+}
+ 
 
 # ------------------------------------------------------------------------------
 # Installs all required software packages and tools
@@ -13,7 +20,7 @@ install_requirements() {
   echo ""
   echo "Atualizando APT packages list..."
   echo ""
-  armbian-software
+
   sudo apt-get install \
   apparmor \
   jq \
