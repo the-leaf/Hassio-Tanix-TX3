@@ -118,7 +118,6 @@ main() {
   install_docker
   install_osagents
   install_hassio
-  upgrade_final
 
   # Friendly closing message
   ip_addr=$(hostname -I | cut -d ' ' -f1)
