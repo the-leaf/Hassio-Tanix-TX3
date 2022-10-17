@@ -42,7 +42,7 @@ update_hostname() {
 #  echo "A instalar Armbian Software..."
 #  echo ""
 #  armbian-software
-}
+#}
 
 
 # ------------------------------------------------------------------------------
