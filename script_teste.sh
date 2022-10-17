@@ -42,6 +42,9 @@ install_armbian-software() {
   echo "A instalar Armbian Software..."
   echo ""
   armbian-software
+  echo ""
+  echo "O nome do host será alterado na próxima reinicialização:"
+  echo ""
 }
 
 
