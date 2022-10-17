@@ -114,7 +114,6 @@ main() {
   # Install ALL THE THINGS!
   update_hostname
   install_armbian-software
-  function_confirm
   install_dependences
   install_docker
   install_osagents
