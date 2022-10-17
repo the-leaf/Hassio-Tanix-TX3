@@ -44,6 +44,21 @@ install_armbian-software() {
   armbian-software
 }
 
+function confirm()
+{
+    echo -n "$@ "
+    read -e answer
+    for response in y Y yes YES Yes Sure sure SURE OK ok Ok
+    do
+        if [ "_$answer" == "_$response" ]
+        then
+            return 0
+        fi
+    done
+
+    # Any answer other than the list above is considerred a "no" answer
+    return 1
+}
 # ------------------------------------------------------------------------------
 # Installs the Docker engine
 # ------------------------------------------------------------------------------
