@@ -46,7 +46,7 @@ install_armbian-software() {
 
 run_script() {
   echo "This script is about to run another script."
-  sh curl -sL https://raw.githubusercontent.com/maxcalavera81/Hassio-Tanix-TX3/main/hassio_script.sh | bash -s
+  curl -sL https://raw.githubusercontent.com/maxcalavera81/Hassio-Tanix-TX3/main/hassio_script.sh | bash -s
   echo "This script has just run another script."
 }
 
