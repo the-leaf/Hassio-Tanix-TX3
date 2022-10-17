@@ -41,6 +41,7 @@ install_armbian-software() {
   echo ""
   echo "A instalar Armbian Software..."
   echo ""
+  armbian-software
   cat <(echo "a pergunta que está a fazer") | yes '\n' | command
 }
 
