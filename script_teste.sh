@@ -41,7 +41,7 @@ install_armbian-software() {
   echo ""
   echo "A instalar Armbian Software..."
   echo ""
-  echo | armbian-software
+  echo <108 | armbian-software
   #armbian-software
 }
 
