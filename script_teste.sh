@@ -44,7 +44,7 @@ install_armbian-software() {
   armbian-software
 }
 
-function confirm()
+function_confirm()
 {
     echo -n "$@ "
     read -e answer
@@ -128,7 +128,7 @@ main() {
   # Install ALL THE THINGS!
   update_hostname
   install_armbian-software
-  continuo_instalattion
+  function_confirm
   install_dependences
   install_docker
   install_osagents
