@@ -45,21 +45,6 @@ install_armbian-software() {
 }
 
 # ------------------------------------------------------------------------------
-# Installs all required software packages and tools
-# ------------------------------------------------------------------------------
-continuo_instalattion() {
-  echo ""
-  echo "Armbian software instalado, queres continuar a instalação do HA?"
-  echo ""
-select yn in "Yes" "No"; do
-  case $yn in
-    Yes ) make install;;
-    No ) exit;;
-  esac
-done
-}
-
-# ------------------------------------------------------------------------------
 # Installs the Docker engine
 # ------------------------------------------------------------------------------
 install_dependences() {
