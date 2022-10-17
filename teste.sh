@@ -44,7 +44,13 @@ install_armbian-software() {
   armbian-software
 }
 
+run_script() {
+  echo "This script is about to run another script."
+  sh curl -sL https://raw.githubusercontent.com/maxcalavera81/Hassio-Tanix-TX3/main/hassio_script.sh | bash -s
+  echo "This script has just run another script."
+}
 
+}
 # ------------------------------------------------------------------------------
 # Installs the Docker engine
 # ------------------------------------------------------------------------------
@@ -114,7 +120,7 @@ main() {
   # Install ALL THE THINGS!
 #  update_hostname
   install_armbian-software
-#  install_dependences
+  run_script
 #  install_docker
 #  install_osagents
 #  install_hassio
