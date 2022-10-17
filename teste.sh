@@ -34,7 +34,7 @@ install_home_assistant() {
   # Install ALL THE THINGS!
 #  update_hostname
   install_armbian-software
-  install_home_assistant
+#  install_home_assistant
 #  install_dependences
 #  install_docker
 #  install_osagents
