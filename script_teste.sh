@@ -37,11 +37,11 @@ update_hostname() {
 # ------------------------------------------------------------------------------
 # Installs all required software packages and tools
 # ------------------------------------------------------------------------------
-install_armbian-software() {
-  echo ""
-  echo "A instalar Armbian Software..."
-  echo ""
-  armbian-software
+#install_armbian-software() {
+#  echo ""
+#  echo "A instalar Armbian Software..."
+#  echo ""
+#  armbian-software
 }
 
 
@@ -113,7 +113,7 @@ main() {
 
   # Install ALL THE THINGS!
   update_hostname
-  install_armbian-software
+#  install_armbian-software
   install_dependences
   install_docker
   install_osagents
