@@ -42,13 +42,6 @@ install_armbian-software() {
   echo "A instalar Armbian Software..."
   echo ""
   armbian-software
-  echo "Armbian software instalado, queres continuar a instalação do HA?"
-select yn in "Yes" "No"; do
-  case $yn in
-    Yes ) make install;;
-    No ) exit;;
-  esac
-done
 }
 
 # ------------------------------------------------------------------------------
