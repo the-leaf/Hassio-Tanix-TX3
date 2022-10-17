@@ -37,13 +37,13 @@ update_hostname() {
 # ------------------------------------------------------------------------------
 # Installs all required software packages and tools
 # ------------------------------------------------------------------------------
-#install_armbian-software() {
-#  echo ""
-#  echo "A instalar Armbian Software..."
-#  echo ""
-#  armbian-software
-#  exit
-#}
+install_armbian-software() {
+  echo ""
+  echo "A instalar Armbian Software..."
+  echo ""
+  echo | armbian-sofware 
+
+}
 
 # ------------------------------------------------------------------------------
 # Installs the Docker engine
@@ -113,7 +113,7 @@ main() {
 
   # Install ALL THE THINGS!
   update_hostname
-#  install_armbian-software
+  install_armbian-software
   install_dependences
   install_docker
   install_osagents
