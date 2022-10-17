@@ -39,5 +39,3 @@ install_home_assistant() {
 #  install_docker
 #  install_osagents
 #  install_hassio
-
-main
