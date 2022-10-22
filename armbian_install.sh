@@ -23,15 +23,13 @@ readonly HOSTNAME="homeassistant"
 # Ensures the hostname of the Pi is correct.
 # ------------------------------------------------------------------------------
 update_hostname() {
-  old_hostname=$(< /etc/hostname)
-  if [[ "${old_hostname}" != "${HOSTNAME}" ]]; then
-    sed -i "s/${old_hostname}/${HOSTNAME}/g" /etc/hostname
-    sed -i "s/${old_hostname}/${HOSTNAME}/g" /etc/hosts
+    hostname
+    sudo hostname homeassistant
     hostname "${HOSTNAME}"
     echo ""
     echo "O nome do host será alterado na próxima reinicialização: ${HOSTNAME}"
     echo ""
-  fi
+
 }
 
 # ------------------------------------------------------------------------------
