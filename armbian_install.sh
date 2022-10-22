@@ -27,26 +27,24 @@ update_hostname() {
     sudo hostname homeassistant
     hostname "${HOSTNAME}"
     echo ""
-    echo "O nome do host será alterado na próxima reinicialização: ${HOSTNAME}"
+    echo "O nome do host será alterado na próxima reinicialização para: ${HOSTNAME}"
     echo ""
 
 }
 
 # ------------------------------------------------------------------------------
-# Installs all required software packages and tools
+# Installs armbian software
 # ------------------------------------------------------------------------------
 install_armbian-software() {
   echo ""
   echo "A instalar Armbian Software..."
   echo ""
   armbian-software || :
-  #armbian-software || true
-  #armbian-software
 }
 
 
 # ------------------------------------------------------------------------------
-# Installs the Docker engine
+# Installs dependences
 # ------------------------------------------------------------------------------
 install_dependences() {
   echo ""
