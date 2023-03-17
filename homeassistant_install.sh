@@ -79,8 +79,8 @@ install_osagents() {
   echo ""
   echo "A instalar os agents..."
   echo ""
-  wget https://github.com/home-assistant/os-agent/releases/download/1.4.1/os-agent_1.4.1_linux_aarch64.deb
-  sudo dpkg -i os-agent_1.4.1_linux_aarch64.deb
+  wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent_1.5.1_linux_armv7.deb
+  sudo dpkg -i os-agent_1.5.1_linux_armv7.deb
   systemctl status haos-agent --no-pager
 }
 
